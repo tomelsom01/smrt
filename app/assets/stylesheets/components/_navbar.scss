@@ -10,3 +10,15 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+@media (min-width: 991px) {
+  .smallscreendisplay {
+    display: none;
+  }
+
+}
+@media (max-width: 991px) {
+  .largescreendisplay {
+    display: none;
+  }
+}
