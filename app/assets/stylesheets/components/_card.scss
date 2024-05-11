@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 0px;
-  
+
 }
 
 .hompagecard1{
@@ -10,7 +10,24 @@
   margin-bottom: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: #695C50;
-  max-width: 572px;
+  background-color: white;
+  width: 100vw;
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.bloggrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0px;
+}
+
+.blogcard1{
+ width:33vw;
+  background-color: #695C50;
+  color: white;
+}
+
+.blogcard2{
+  width:33vw;
+  background-color: #D16C2C;
 }
