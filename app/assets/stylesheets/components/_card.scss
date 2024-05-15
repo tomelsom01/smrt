@@ -30,3 +30,17 @@
   width:33vw;
   background-color: #D16C2C;
 }
+
+.straight{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.animate_on_scroll{
+  opacity: 1;
+  transform: translate(-500px);
+  transition: all 0.4s ease-out;
+  transition-delay: 0.2s;
+}
