@@ -11,6 +11,14 @@
   width: 40px;
 }
 
+.mainnav{
+  position:fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: green;
+}
+
 @media (min-width: 991px) {
   .smallscreendisplay {
     display: none;
