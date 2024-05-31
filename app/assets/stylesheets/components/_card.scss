@@ -9,24 +9,32 @@
   padding-bottom: 0.5rem;
   background-color: white;
   width: 100%;
-  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+
 }
 
 .bloggrid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 0px;
+  grid-gap: 20px;
+  padding: 20px;
+}
+.blogcard1, .blogcard2 {
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .blogcard1{
- width:33vw;
-  background-color: #695C50;
-  color: white;
+  background-color: white;
+  color: black;
+
+
 }
 
 .blogcard2{
-  width:33vw;
   background-color: #D16C2C;
+
 }
 
 .straight{

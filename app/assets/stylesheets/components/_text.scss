@@ -1,11 +1,36 @@
 .logocolor{
   color: #FF0000;
-  padding-top: 50vh;
-  padding-left: 50vw;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
+.textblack{
+  color: #000000;
+}
+
 
 *{
   font-family: 'Roboto', sans-serif;
   font-size: 1 rem;
   color: #000000;
+}
+
+.arrowdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000a5;
+  z-index: 2;
+  font-size: 5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.material-symbols-outlined.arrowdown:hover{
+  display: none;
+}
+
+#arrowhover:hover{
+  color: blue;
 }

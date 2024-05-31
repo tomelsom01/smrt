@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   }, {
-    threshold: 0.5 // Adjust threshold as needed
+    threshold: 0.2 // Adjust threshold as needed
   });
 
   animation_elements.forEach((element) => {
@@ -30,10 +30,35 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   }, {
-    threshold: 0.5 // Adjust threshold as needed
+    threshold: 0.2 // Adjust threshold as needed
   });
 
   animation_elements.forEach((element) => {
     observer.observe(element);
   });
 });
+document.addEventListener("DOMContentLoaded", function() {
+  const mainnav = document.getElementById("mainnav");
+
+  let hasScrolled = false;
+
+  window.addEventListener("scroll", function() {
+    if (!hasScrolled) {
+      mainnav.classList.add("blacktime");
+      hasScrolled = true;
+    }
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        mainnav.classList.remove("blacktime");
+      }
+    });
+  }, {
+    threshold: 0.2 // Adjust threshold as needed
+  });
+
+  observer.observe(mainnav);
+});
+

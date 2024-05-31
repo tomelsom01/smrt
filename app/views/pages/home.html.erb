@@ -1,58 +1,73 @@
-
 <div class="homepageimage1">
   <h1 class="logocolor">SMRT</h1>
-</div>
-<div class="hompagecard1 text-center">
-  <h3>SMRT understands that improving and maintaining a healthy and active lifestyle lies at the core of every individual.</h3><br/>
-   <h3>However, along this journey the physical or psychological body can need rejuvenation. </h3><br/>
-  <h3>All treatments are delivered in a way to relax and revitalize the body and mind. These treatments are tailor-made for each individual: to help soothe the mind while using specific techniques to either prevent or rehabilitate injuries.
-  Through SMRT, you can choose from a range of treatments to have at home or wherever suits you.</h3>
+  <h2 class="textblack text-center">Sports Massage and Remedial Therapy</h2>
+  <p id="arrowhover" class="material-symbols-outlined arrowdown">keyboard_arrow_down</p>
+</div> <!-- closes .homepageimage1 -->
 
-</div>
+<div class="backgroundwhite">
+  <div class="hompagecard1 text-center container pt-3 pb-3">
+    <h5>SMRT understands that improving and maintaining a healthy and active lifestyle lies at the core of every individual.</h5><br/>
+    <h5>However, along this journey the physical or psychological body can need rejuvenation. </h5><br/>
+    <h5>All treatments are delivered in a way to relax and revitalize the body and mind. These treatments are tailor-made for each individual: to help soothe the mind while using specific techniques to either prevent or rehabilitate injuries.
+    Through SMRT, you can choose from a range of treatments to have at home or wherever suits you.</h5>
+  </div> <!-- closes .hompagecard1 -->
+</div> <!-- closes .backgroundwhite -->
 
 <%= cl_image_tag("What-is-a-Sports-Massage_w9x5rw", class: "homepageimagecard2", alt: "head massage") %>
-<div class="bloggrid backcolour">
+
+<div class="bloggrid">
   <div class="blogcard1 animate_on_scroll_left">
+    <%= cl_image_tag("Sports-Massage-Therapist_wewcew", class: "homepageimagecard3", alt: "head massage") %>
     <h4>ipsum lorum</h4>
     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-  </div>
+    <button class="btn btn-dark">Read more</button>
+  </div> <!-- closes .blogcard1 -->
+
   <div class="blogcard1 animate_on_scroll">
+    <%= cl_image_tag("sprtmss_vaqdxe", class: "homepageimagecard3", alt: "head massage") %>
     <h4>ipsum lorum</h4>
-
     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-  </div>
+    <button class="btn btn-dark">Read more</button>
+  </div> <!-- closes .blogcard1 -->
+
   <div class="blogcard2 animate_on_scroll">
+    <%= cl_image_tag("sports-massage-deep-tissue_ziu36h", class: "homepageimagecard3", alt: "head massage") %>
     <h4>ipsum lorum</h4>
-
     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-  </div>
+    <button class="btn btn-dark">Read more</button>
+  </div> <!-- closes .blogcard2 -->
+</div> <!-- closes .bloggrid -->
+
+<div class="card container">
+  <h2>Contact Me</h2>
+  <%= form_for @contact_form do |f| %>
+    <div class="form-group">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
+    </div> <!-- closes .form-group -->
+
+    <div class="form-group">
+      <%= f.label :address %>
+      <%= f.text_field :address, class: 'form-control' %> <!-- corrected field type -->
+    </div> <!-- closes .form-group -->
+
+    <div class="form-group">
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :telephone %>
+      <%= f.text_field :telephone, class: 'form-control' %> <!-- corrected field type -->
+    </div>
+
+    <div class="form-group">
+      <%= f.label :message %>
+      <%= f.text_area :message, class: 'form-control' %>
+    </div>
+
+    <%= f.submit 'Send', class: 'mt-2 btn btn-dark' %>
+  <% end %>
 </div>
 
-
-     <%= form_for @contact_form do |f| %>
-  <div class="form-group">
-    <%= f.label :name %>
-    <%= f.text_field :name, class: 'form-control' %>
-  </div>
-  <div class="form-group">
-    <%= f.label :address %>
-    <%= f.text_field :address, class: 'form-control' %> <!-- This should be text_field instead of email_field -->
-  </div>
-  <div class="form-group">
-    <%= f.label :email %>
-    <%= f.email_field :email, class: 'form-control' %>
-  </div>
-  <div class="form-group">
-    <%= f.label :telephone %>
-    <%= f.text_field :telephone, class: 'form-control' %> <!-- This should be text_field instead of email_field -->
-  </div>
-  <div class="form-group">
-    <%= f.label :message %>
-    <%= f.text_area :message, class: 'form-control' %>
-  </div>
-  <%= f.submit 'Send', class: 'mt-2 btn btn-dark' %>
-<% end %>
-  </div>
-
-</div>
 <%= javascript_include_tag('test.js') %>

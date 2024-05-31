@@ -11,10 +11,11 @@
 }
 
 .homepageimage1{
-  background-image: url("https://res.cloudinary.com/daaxwngzv/image/upload/v1715187245/massageeye_j6gvog.png");
+  background-image: url("https://res.cloudinary.com/daaxwngzv/image/upload/v1716201504/usain_bolt_grin_gz87xw.webp");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-color: #695C50;
+  padding-top: 10rem;
   height: 100vh;
   width: 100%;
   z-index: -2;
@@ -29,4 +30,12 @@
   width: 100%;
   top: 100vh;
   left: 0;
+}
+
+.homepageimagecard3{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #695C50;
+  height: 20vh;
+  width: 100%;
 }
